@@ -1,0 +1,67 @@
+.navbar {
+    background-color: #ffffff !important; 
+    border-bottom: 3px solid #ffcc00; 
+}
+
+.navbar-brand {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 28px;
+    color: #6a1b9a !important;
+}
+
+.nav-link {
+    color: #333 !important; 
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #6a1b9a !important; 
+}
+
+.icon-users {
+    color: #007bff; /* Color azul */
+}
+
+.icon-notifications {
+    color: #dc3545; /* Color rojo */
+}
+
+.icon-records {
+    color: #28a745; /* Color verde */
+}
+
+.icon-access-points {
+    color: #17a2b8; /* Color cian */
+}
+
+.icon-reports {
+    color: #6f42c1; /* Color púrpura */
+}
+
+.icon-preview {
+    color: #ffc107; /* Color dorado */
+}
+
+.icon-excel {
+    color: #28a745; /* Color verde */
+}
+
+.icon-pdf {
+    color: #dc3545; /* Color rojo */
+}
+
+.icon-graphs {
+    color: #fd7e14; /* Color naranja */
+}
+
+.icon-chart1 {
+    color: #007bff; /* Color azul */
+}
+
+.icon-chart2 {
+    color: #fd7e14; /* Color naranja */
+}
+
+.icon-logout {
+    color: #6a1b9a; /* Color púrpura */
+}

@@ -1,0 +1,24 @@
+.warning-icon {
+    font-size: 2rem;
+    color: #ff0000;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.modal-content-custom {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.modal-header-custom {
+    background-color: #f5c6cb;
+    border-bottom: 1px solid #f1b0b7;
+}
+
+.modal-footer-custom {
+    background-color: #f5c6cb;
+    border-top: 1px solid #f1b0b7;
+}

@@ -1,0 +1,85 @@
+/*CSS del diseño de la interfaz*/
+body {
+    background-color: #f4f4f4;
+    color: #333; 
+    font-family: 'Cinzel', serif; 
+}
+
+.navbar {
+    background-color: #eaeaea !important; 
+    border-bottom: 3px solid #d4af37; 
+}
+
+.navbar-brand {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 28px;
+    color: #d4af37 !important; 
+}
+
+.nav-link {
+    color: #333 !important; 
+    font-size: 18px; 
+}
+
+.nav-link:hover {
+    color: #d4af37 !important; 
+}
+
+.table {
+    background-color: #ffffff; 
+    color: #333; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background-color: #d4af37; 
+    color: white; 
+}
+
+.table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f0f0; 
+}
+
+.btn-primary {
+    background-color: #4b0082; 
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #6a0dad; 
+}
+
+.modal-content {
+    background-color: #ffffff; 
+    color: #333;
+    border: 2px solid #d4af37; 
+}
+
+.modal-header {
+    background-color: #d4af37; 
+    color: white; 
+    border-bottom: 2px solid #ffcc00; 
+}
+
+.modal-footer {
+    border-top: 2px solid #d4af37; 
+}
+
+.form-control, .form-select {
+    background-color: #f8f8f8; 
+    color: #333; 
+    border: 1px solid #d4af37; 
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #ffffff; 
+    border-color: #ffcc00; 
+    box-shadow: none;
+}
+
