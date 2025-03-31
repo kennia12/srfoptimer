@@ -88,32 +88,12 @@
     </div>
 </div>
 
-<!-- Pestañas de Información -->
-<div class="container my-5 tab-content">
-    <!-- Pestaña Sobre Nosotros -->
-    <div class="tab-pane fade" id="aboutTab">
-        <h2 class="text-center text-secondary fw-bold mb-4">Sobre Nosotros</h2>
-        <p class="text-muted text-center">Somos una empresa innovadora que ofrece soluciones avanzadas para el control de accesos mediante tecnologías de vanguardia como el reconocimiento facial y RFID. Nuestro objetivo es proporcionar seguridad y eficiencia en los sistemas de acceso, adaptándonos a las necesidades de cada cliente.</p>
-    </div>
-
-    <!-- Pestaña Contacto -->
-    <div class="tab-pane fade" id="contactTab">
-        <h4 class="text-center text-secondary fw-bold mb-3">¿Necesitas ayuda?</h4>
-        <p class="text-muted text-center">Escríbenos para más información. Estaremos encantados de atenderte.</p>
-        <a href="mailto:soporte@tusistema.com" class="btn btn-secondary btn-lg fw-bold">Contactar</a>
-    </div>
-</div>
-
-@endsection
-
-<!-- Estilos adicionales -->
+<!-- Estilos Adicionales -->
 <style>
-    /* Fondo de la sección principal */
     .bg-dark {
         background-color: #343a40 !important;
     }
 
-    /* Barra de navegación en escala de grises */
     .navbar {
         background-color: #6c757d !important;
     }
@@ -122,23 +102,25 @@
         color: #ffffff !important;
     }
 
-    /* Colores personalizados en escala de grises */
     .text-secondary {
         color: #6c757d !important;
     }
 
-    /* Estilo de botones */
-    .btn-secondary {
-        background-color: #6c757d;
-        border-color: #6c757d;
+    .text-info {
+        color: #17a2b8 !important;
     }
 
-    .btn-secondary:hover {
-        background-color: #5a6268;
-        border-color: #545b62;
+    footer {
+        background-color: #232F3E;
+        color: white;
+        padding: 20px;
+        text-align: center;
     }
 </style>
 
-<!-- Scripts de Bootstrap (JavaScript) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap 5.3.2 y Bootstrap Icons Actualizado -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
 
+<!-- Bootstrap Bundle con Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
