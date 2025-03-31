@@ -379,7 +379,7 @@
                         <h5 class="modal-title" id="importReportesModalLabel">Importar Reportes de Usuarios</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form id="importReportesForm" action="{{ route('import.reportes') }}" method="POST"
+                    <form id="importReportesForm" action="{{ route('import.usuarios') }}" method="POST"
                         enctype="multipart/form-data">
                         @csrf
                         <div class="modal-body">

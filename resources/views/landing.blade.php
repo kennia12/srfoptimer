@@ -17,10 +17,10 @@
                     <a class="nav-link active" href="#home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="aboutTabLink" href="#aboutTab" data-bs-toggle="tab">Sobre Nosotros</a>
+                    <a class="nav-link" href="{{ route('about') }}">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="contactTabLink" href="#contactTab" data-bs-toggle="tab">Contacto</a>
+                    <a class="nav-link" href="{{ route('contact') }}">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -90,14 +90,17 @@
 
 <!-- Estilos Adicionales -->
 <style>
-    .bg-dark {
-        background-color: #343a40 !important;
-    }
-
+    /* Corrección de la Barra Azul */
     .navbar {
-        background-color: #6c757d !important;
+        background-color: #343a40 !important; /* Oscuro */
     }
 
+    /* Ajuste para eliminar cualquier color azul no deseado */
+    .bg-dark {
+        background-color: #343a40 !important; 
+    }
+
+    /* Asegurar color blanco en los enlaces */
     .navbar a {
         color: #ffffff !important;
     }

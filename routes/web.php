@@ -11,12 +11,28 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ImportController;
 use App\Http\Controllers\HistorialController;
 use App\Http\Controllers\AccesosController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\AccessController;
+
 
 // ------------------------- Página de Bienvenida -------------------------
 
 Route::get('/', function () {
     return view('landing'); // Se cambia "welcome" por "landing"
 });
+
+// Ruta para registrar accesos desde ESP32
+Route::get('/registrar-acceso', [AccessController::class, 'registrarAcceso'])->name('registrar.acceso');
+// Ruta para obtener datos desde el ESP32
+Route::get('/perfil/datos-esp32', [PerfilController::class, 'obtenerDatosESP32'])->name('perfil.datos-esp32');
+// Ruta para mostrar la vista perfil_usuario
+Route::get('/perfil-usuario', [PerfilController::class, 'mostrarVistaPerfilUsuario'])->name('perfil.usuario');
+// Ruta para mostrar la vista con los datos obtenidos del ESP32
+//Route::get('/perfil-usuario', [PerfilController::class, 'mostrarVistaPerfilUsuario'])->name('perfil.usuario');
+
+// Ruta para registrar datos obtenidos del ESP32 en la base de datos
+Route::post('/registrar-acceso', [PerfilController::class, 'registrarAccesoDesdeESP32'])->name('registrar.acceso');
 // ------------------------- Rutas de Autenticación -------------------------
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
@@ -61,6 +77,15 @@ Route::get('/puntos_acceso/create', [PuntosAccesoController::class, 'create'])->
 Route::get('/puntos_acceso/{puntos_acceso_id}', [PuntosAccesoController::class, 'edit'])->name('puntos_acceso.edit');
 Route::put('/puntos_acceso/{puntos_acceso_id}', [PuntosAccesoController::class, 'update'])->name('puntos_acceso.update');
 Route::delete('/puntos_acceso/{puntos_acceso_id}', [PuntosAccesoController::class, 'destroy'])->name('puntos_acceso.destroy');
+
+// ------------------------- Rutas para Secciones Públicas -------------------------
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+// Rutas para las secciones públicas
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 // ------------------------- Rutas para Reportes (PDF y Excel) -------------------------
 Route::get('/reportes/generar-pdf', [ReportController::class, 'generarPDF'])->name('generar-pdf');
